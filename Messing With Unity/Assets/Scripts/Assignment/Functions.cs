@@ -1,15 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class Functions : MonoBehaviour
-void start 
+// public class Functions : MonoBehaviour{
+//     void Start(){
+       
+//         Weather(weather);
+//         }
 
-weather("cloudy");
-{void weather(string weatherstate){
+// void Weather(string weatherstate){
 
-    print("the current weather is"+weatherstate);    
+// }
+
+
+
+
+//     void Weather(string weatherstate){
+
+//     print("the current weather is"+weatherstate);    
  
  
-    }
-}
+//     }
+// }
