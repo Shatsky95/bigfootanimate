@@ -9,7 +9,7 @@ public GameObject PC;
         if(other.name == "PC")
         //player collects coin
 
-        else{
+        {
             //not player
         }
 
