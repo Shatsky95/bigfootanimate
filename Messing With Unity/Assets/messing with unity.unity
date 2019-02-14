@@ -300,6 +300,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &620542450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620542451}
+  - component: {fileID: 620542452}
+  m_Layer: 0
+  m_Name: Lion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620542451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620542450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42193693, y: 0.16993405, z: -0.20507812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &620542452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620542450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a235f1ca48413f043af4d8a204876cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  age: 0
+  weight: 0
+  color: 0
+  mane: 0
+  tail: 0
+  agility: 0
+  size: 0
+  claws: 0
 --- !u!1 &685458454
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,12 +493,12 @@ MonoBehaviour:
   pointedEars: 0
   shortHair: 0
   declawed: 0
-  size: 6.3
-  weight: 400
-  agility: 3.2
-  furColor: orange
-  age: 43
-  banded: 1
+  size: 0
+  weight: 0
+  agility: 0
+  furColor: 
+  age: 0
+  banded: 0
 --- !u!4 &875245165
 Transform:
   m_ObjectHideFlags: 0
@@ -474,7 +525,7 @@ GameObject:
   - component: {fileID: 1156248787}
   - component: {fileID: 1156248786}
   - component: {fileID: 1156248785}
-  - component: {fileID: 1156248784}
+  - component: {fileID: 1156248789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -482,19 +533,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1156248784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156248783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3eb9ed22a9091445a5da5c20a9610ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!50 &1156248785
 Rigidbody2D:
   serializedVersion: 4
@@ -604,6 +642,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156248789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156248783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3eb9ed22a9091445a5da5c20a9610ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpHeight: 5
 --- !u!1 &1397395768
 GameObject:
   m_ObjectHideFlags: 0
