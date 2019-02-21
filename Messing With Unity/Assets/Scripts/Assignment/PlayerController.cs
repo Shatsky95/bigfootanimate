@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour{
    
-
+// player movement variables
    public float moveSpeed;
    public float jumpHeight;
-   
+   //player grounded variables 
+   private bool grounded; 
     // Start is called before the first frame update
     void Start()
-    {
+    { grounded = true; 
         
     }
 
     // Update is called once per frame
     void Update(){
-        if(Input.GetKey(KeyCode.D))
+        //moves player left and right
+
+    
+        if(Input.GetKey(KeyCode.D)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        else if(Input.GetKey(KeyCode.A))
+        }
+        else if(Input.GetKey(KeyCode.A)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        else if(Input.GetKey(KeyCode.W))
+        }
+            //makes player jump
+        if(Input.GetKeyDown(KeyCode.W) && grounded ){
             GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
     }
+}
 }
