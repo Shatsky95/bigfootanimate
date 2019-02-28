@@ -22,9 +22,9 @@ public class Sample_IF_Statements2 : MonoBehaviour {
            }
                
 
-               else{
-                   print("it hurts so bad");
-               }
+            else{
+                print("it hurts so bad");
+            }
                    
                
        }            
@@ -33,7 +33,8 @@ public class Sample_IF_Statements2 : MonoBehaviour {
                 print("im gonna score that goal");
             }
         }
-
+    }
+}
 
                
            
@@ -41,5 +42,4 @@ public class Sample_IF_Statements2 : MonoBehaviour {
 
         
 
-    }
-}
+    
