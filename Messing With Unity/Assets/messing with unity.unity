@@ -123,6 +123,8 @@ GameObject:
   - component: {fileID: 107566272}
   - component: {fileID: 107566271}
   - component: {fileID: 107566270}
+  - component: {fileID: 107566273}
+  - component: {fileID: 107566274}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -137,7 +139,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107566269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4945192b4236235488f4739a7a3835ef, type: 3}
   m_Name: 
@@ -206,6 +208,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107566273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107566269}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b993f8205b0914f8d4cd817363ab0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suspect: 
+  weapon: 
+  room: 
+--- !u!114 &107566274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107566269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc1a0b94cda82f419bd62b2ada16cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: 
 --- !u!1 &220614953
 GameObject:
   m_ObjectHideFlags: 0
