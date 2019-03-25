@@ -8,6 +8,8 @@ public class HealthBar : MonoBehaviour{
     public int playerHealth = 100;
     public int currentHealth;
 
+    Text Health;
+
     void Start (){
         currentHealth = playerHealth;
     }
@@ -18,6 +20,7 @@ public class HealthBar : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+    
 
     }
 
