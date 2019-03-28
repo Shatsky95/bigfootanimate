@@ -17,7 +17,7 @@ public class ArraysListsDicts : MonoBehaviour
     //List Example- Scalable
     public List<string> santasList = new List<string>();
 
-    //ArrayList Example
+    //ArrayList Example- Not viewable in editor
     public ArrayList inventory = new ArrayList();
     // Start is called before the first frame update
     void Start()

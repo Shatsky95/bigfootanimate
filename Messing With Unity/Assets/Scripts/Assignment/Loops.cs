@@ -9,11 +9,11 @@ public class Loops : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         //do while loop
-        // bool shouldContinue = false;
+         bool shouldContinue = false;
 
-        // do{
-        //     print("Hello World");
-        // }while(shouldContinue == true);
+         do{
+            print("Hello World");
+         }while(shouldContinue == true);
 
         
         //For loop
