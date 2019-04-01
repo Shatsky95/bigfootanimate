@@ -29,7 +29,7 @@ public class ScoreManager : MonoBehaviour{
         scoreText.text = " " + score; 
     }
 
-        public static void Addpoints (int pointsToAdd) {
+        public static void AddPoints (int pointsToAdd) {
            
             score += pointsToAdd;
         
