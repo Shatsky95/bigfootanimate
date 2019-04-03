@@ -23,8 +23,8 @@ public class LevelManager : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        pcRigid = GameObject.Find("player").GetComponent<Rigidbody2D>();
-        player = GameObject.Find("player");
+        pcRigid = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player");
         
     }
     public void RespawnPlayer(){
