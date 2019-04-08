@@ -11,7 +11,8 @@ public class PracticeDictionary5 : MonoBehaviour{
         subtledetails.Add("gender", "female");
         subtledetails.Add("isMarried", true);
         subtledetails.Add("age", 54);
-        
+
+         Debug.Log((string)subtledetails["firstName"]);
     }
 
     // Update is called once per frame
