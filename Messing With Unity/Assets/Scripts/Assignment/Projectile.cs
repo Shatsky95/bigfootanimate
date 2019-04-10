@@ -12,10 +12,10 @@ public class Projectile : MonoBehaviour{
 
     // Start is called before the first frame update
     void Start(){
-        player = GameObject.Find("player");
+        player = GameObject.Find("Player");
 
-        enemyDeath = Resources.Load("Prefabs/Death_PS") as GameObject;
-        projectileParticle = Resources.Load("Prefabs/Respawn_PS") as GameObject;
+        enemyDeath = Resources.Load("Prefabs/PS") as GameObject;
+        projectileParticle = Resources.Load("Prefabs/PS") as GameObject;
         if(player.transform.localScale.x < 0)
             speed = -speed;
 

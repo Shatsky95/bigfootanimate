@@ -6,7 +6,7 @@ public class Kill : MonoBehaviour{
     public LevelManager levelManager;
     //use this for intialization
     void Start (){
-        levelManager = FindObjectOfType <LevelManager>();
+         levelManager = FindObjectOfType <LevelManager>();
     }
 
    void OnTriggerEnter2D(Collider2D other){

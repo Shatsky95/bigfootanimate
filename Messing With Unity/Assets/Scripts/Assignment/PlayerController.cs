@@ -12,9 +12,12 @@ public class PlayerController : MonoBehaviour{
    public Transform groundCheck;
    public float groundCheckRadius;
    public LayerMask whatIsGround;
+
+   public Vector3 scale;
+
     // Start is called before the first frame update
     void Start()
-    {  
+    {  scale = transform.localScale;
         
     }
     void FixedUpdate(){
@@ -36,7 +39,13 @@ public class PlayerController : MonoBehaviour{
             //makes player jump
         if(Input.GetKeyDown(KeyCode.W) && grounded ){
             Jump();
-    }
+    }// make player flip
+        if(GetComponent<Rigidbody2D>().velocity.x > 0)
+            transform.localScale = new Vector3(scale.x,scale.y,scale.z);
+
+        else if(GetComponent<Rigidbody2D>().velocity.x < 0)
+            transform.localScale = new Vector3(-scale.x,scale.y,scale.z);
+            
 
 
 }
