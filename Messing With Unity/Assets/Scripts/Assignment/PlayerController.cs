@@ -15,9 +15,13 @@ public class PlayerController : MonoBehaviour{
 
    public Vector3 scale;
 
+   public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {  scale = transform.localScale;
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isWalking", false);
         
     }
     void FixedUpdate(){
@@ -32,9 +36,18 @@ public class PlayerController : MonoBehaviour{
     
         if(Input.GetKey(KeyCode.D)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            animator.SetBool("isWalking",true);
+        }
+
+        else if(Input.GetKeyUp (KeyCode.D)){
+            animator.SetBool("isWalking",false);
         }
         else if(Input.GetKey(KeyCode.A)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            animator.SetBool("isWalking",true);
+        }
+        else if(Input.GetKeyUp (KeyCode.A)){
+            animator.SetBool("isWalking",false);
         }
             //makes player jump
         if(Input.GetKeyDown(KeyCode.W) && grounded ){
@@ -51,6 +64,7 @@ public class PlayerController : MonoBehaviour{
 }
     void Jump(){
          GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,jumpHeight);
+         animator.SetBool("isJumping",true);
 
     }
 }
