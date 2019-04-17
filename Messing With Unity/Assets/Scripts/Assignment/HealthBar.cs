@@ -12,6 +12,7 @@ public class HealthBar : MonoBehaviour{
 
     void Start (){
         currentHealth = playerHealth;
+        Health = GetComponent<Text>();
     }
     
 
@@ -20,6 +21,7 @@ public class HealthBar : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
+        Health.text = " " + currentHealth;
     
 
     }
