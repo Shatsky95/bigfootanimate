@@ -55,13 +55,9 @@ public class LevelManager : MonoBehaviour{
         pcRigid.GetComponent<Renderer> ().enabled = true;
         //spawn PC
         Instantiate (respawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
-
+    
         
 
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
